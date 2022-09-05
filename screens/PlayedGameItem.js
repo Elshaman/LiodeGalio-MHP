@@ -1,12 +1,12 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import {Block, Text} from 'galio-framework'
 
 const PlayedGameItem = (props) => {
   return (
-    <View>
-        <Text>{props.game}</Text>
-        <Text>{props.hours} h</Text>
-    </View>
+    <Block row space="between" style={{ marginTop:16 }}>
+        <Text color="#707070" size={14}>{props.game}</Text>
+        <Text color="#707070" size={14}>{props.hours} h</Text>
+    </Block>
   )
 }
 
